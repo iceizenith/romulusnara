@@ -189,6 +189,47 @@ p {
 /*-- End Heading --*/
 
 
+/*-- Register --*/
+
+#register-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#register-form-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-horizontal .control-label { padding-top: 0; }
+
+.form-group:last-child { margin-bottom: 0; }
+.form-horizontal .control-label { margin-bottom: 10px; }
+
+.form-group {
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.templatemo-create-account {
+  background-color: #fff;
+  border: none;
+  max-width: 700px; 
+}
+.templatemo-create-account label { 
+  font-weight: bold; 
+  margin: 0;
+  padding: 0;
+
+}
+.templatemo-create-account input[type='checkbox'] {
+  margin-right: 10px;
+  position: relative;
+  top: -1.5px;
+}
+.templatemo-radio-group { margin-top: 30px; }
+
+/*-- End Register --*/
 
 
 /*-- Timeline --*/

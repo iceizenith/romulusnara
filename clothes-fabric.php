@@ -1,3 +1,6 @@
+<?php
+require 'connection.php';
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -37,7 +40,11 @@ http://www.templatemo.com/preview/templatemo_417_grill
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="home-account">
-                                    <a href="#">Register</a>
+                                    <?php
+                                    if ($_SESSION == NULL){
+                                        print("<a href=\"register.php\">Register</a>");
+                                    }
+                                    ?>
                                 </div>
                             </div>
                             <div class="col-md-6" id="login-box">

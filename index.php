@@ -1,3 +1,7 @@
+<?php
+require 'connection.php';
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -26,6 +30,14 @@ http://www.templatemo.com/preview/templatemo_417_grill
 
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
+
+
+    <!--?php
+        if (!session_is_registered("ss_username")) session_register(ss_username);
+
+    ?-->
+
+
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -37,24 +49,45 @@ http://www.templatemo.com/preview/templatemo_417_grill
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="home-account">
-                                    <a href="#">Register</a>
+                                    <?php
+                                    if ($_SESSION == NULL){
+                                        print("<a href=\"register.php\">Register</a>");
+                                    }
+                                    ?>
                                 </div>
                             </div>
                             <div class="col-md-6" id="login-box">
                                 <div class="login">
                                     <div>
-                                    <form name="login" method="get">
-                                        <label>Username <input type="text" id="username" /></label>
-                                        <label>Password <input type="password" id="pwd" /></label>
+                                        <?php
+                                            if ($_SESSION != NULL) {
+                                                echo  "logged in as <a href=\"#\">" . $_SESSION["username"] . "</a>";
+                                                echo  " {<a href=\"logout.php\">log out</a>}";
+                                                // var_dump($_SESSION);
+                                                // die();
+                                            }
+
+                                            else{
+
+                                                $aa = '<form name="login" method="post" action="login-handler.php">
+                                        <label>Username <input type="text" id="username" name="username" /></label>
+                                        <label>Password <input type="password" id="pwd" name="pwd"/></label>
                                         <label><input type="submit" id="login-button" /></label>
-                                    </form>
+                                        </form>';
+                                            print($aa);
+
+                                            }
+
+                                            
+
+                                        ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="cart-info">
                                     <i class="fa fa-shopping-cart"></i>
-                                    (<a href="#">5 items</a>) in your cart (<a href="#">$45.80</a>)
+                                    (<a href="#">5 items</a>) in your cart (<a href="#">฿150</a>)
                                 </div>
                             </div>
                         </div>

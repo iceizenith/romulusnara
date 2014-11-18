@@ -14,7 +14,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
 -->
     <head>
         <meta charset="utf-8">
-        <title>Contact - Grill Template by templatemo</title>
+        <title>Romulus Nara | Beta</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
@@ -40,7 +40,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="home-account">
-                                    <a href="#">Register</a>
+                                    <a href="register.php">Register</a>
                                 </div>
                             </div>
                             <div class="col-md-6" id="login-box">
@@ -93,88 +93,94 @@ http://www.templatemo.com/preview/templatemo_417_grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-content">
-                                <h2>Contact Us</h2>
-                                <span>Home / <a href="contact-us.html">Contact Us</a></span>
+                                <h2>Register</h2>
+                                <span>Home / <a href="register.php">Register</a></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            
 
-            <div id="product-post">
+
+            <div id="register-form">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading-section">
-                                <h2>Feel free to send a message</h2>
-                                <img src="images/under-heading.png" alt="" >
-                            </div>
+                        <div class="heading-section">
+                            <h2>1 step to shopping!</h2>
+                            <img src="images/under-heading.png" alt="" >
                         </div>
                     </div>
-                    <div id="contact-us">
-                        <div class="container">
-                            <div class="row">
-                                <div class="product-item col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-8">  
-                                            <div class="message-form">
-                                                <form action="#" method="post" class="send-message">
-                                                    <div class="row">
-                                                    <div class="name col-md-4">
-                                                        <input type="text" name="name" id="name" placeholder="Name" />
-                                                    </div>
-                                                    <div class="email col-md-4">
-                                                        <input type="text" name="email" id="email" placeholder="Email" />
-                                                    </div>
-                                                    <div class="subject col-md-4">
-                                                        <input type="text" name="subject" id="subject" placeholder="Subject" />
-                                                    </div>
-                                                    </div>
-                                                    <div class="row">        
-                                                        <div class="text col-md-12">
-                                                            <textarea name="text" placeholder="Message"></textarea>
-                                                        </div>   
-                                                    </div>                              
-                                                    <div class="send">
-                                                        <button type="submit">Send</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="info">
-                                                <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit. </p>
-                                                <ul>
-                                                    <li><i class="fa fa-phone"></i>010-020-0340</li>
-                                                    <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
-                                                    <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>     
+
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10" id="register-form-container">
+                            <form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="#" method="post">
+                                <div class="form-inner">
+                                    <div class="form-group">
+                                        <div class="col-md-6">                    
+                                            <label for="first_name" class="control-label">First Name</label>
+                                            <input class="form-control" id="first_name" placeholder="" type="text">                                                         
+                                        </div>  
+                                        <div class="col-md-6">                    
+                                            <label for="last_name" class="control-label">Last Name</label>
+                                            <input class="form-control" id="last_name" placeholder="" type="text">                                                          
+                                        </div>             
                                     </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">                   
+                                            <label for="username" class="control-label">Email</label>
+                                            <input class="form-control" id="email" placeholder="" type="email">                                                         
+                                        </div>              
+                                    </div>          
+                                    <div class="form-group">
+                                        <div class="col-md-6">                    
+                                            <label for="username" class="control-label">Username</label>
+                                            <input class="form-control" id="username" placeholder="" type="text">                                                           
+                                        </div>
+                                        <div class="col-md-6 templatemo-radio-group">
+                                            <label class="radio-inline">
+                                                <input name="optionsRadios" id="optionsRadios1" value="option1" type="radio"> Male
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio"> Female
+                                            </label>
+                                        </div>             
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label for="password" class="control-label">Password</label>
+                                            <input class="form-control" id="password" placeholder="" type="password">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="password" class="control-label">Confirm Password</label>
+                                            <input class="form-control" id="password_confirm" placeholder="" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label><input type="checkbox">I agree to the <a href="javascript:;" data-toggle="modal" data-target="#templatemo_modal">Terms of Service</a> and <a href="#">Privacy Policy.</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <input value="Create account" class="btn btn-info" type="submit">
+                                            <a href="login-1.html" class="pull-right">Login</a>
+                                        </div>
+                                    </div>  
                                 </div>
-                            </div>
+                            </form>
                         </div>
+                        
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading-section">
-                                <h2>Find Us On Map</h2>
-                                <img src="images/under-heading.png" alt="" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="googleMap" style="height:420px;"></div>
-                        </div>
-                    </div>     
                 </div>
             </div>
 
 
-            <footer>
+
+
+			<footer>
                 <div class="container">
                     <div class="top-footer">
                         <div class="row">
@@ -193,7 +199,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                     <ul>
                                         <li><a href="#" class="fa fa-facebook"></a></li>
                                         <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-rss"></a></li>
+                                        <!-- <li><a href="#" class="fa fa-rss"></a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -203,8 +209,8 @@ http://www.templatemo.com/preview/templatemo_417_grill
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="about">
-                                    <h4 class="footer-title">About Grill</h4>
-                                    <p>Grill is free HTML5 website template by templatemo and it is a free responsive bootstrap layout that can be applied for any purpose.
+                                    <h4 class="footer-title">About Romulus</h4>
+                                    <p>Grill is free HTML5 website template by templatemo and it is a free responsive bootstrap layout that can be applied for any purpose. 
                                     <br><br>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for photos used in this template. Nam commodo erat quis ligula placerat viverra.</p>
                                 </div>
                             </div>
@@ -212,12 +218,12 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                 <div class="shop-list">
                                     <h4 class="footer-title">Shop Categories</h4>
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>New Grill Menu</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Healthy Fresh Juices</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Spicy Delicious Meals</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Clothes</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Fabric</a></li>
+                                        <!-- <li><a href="#"><i class="fa fa-angle-right"></i>Spicy Delicious Meals</a></li>
                                         <li><a href="#"><i class="fa fa-angle-right"></i>Simple Italian Pizzas</a></li>
                                         <li><a href="#"><i class="fa fa-angle-right"></i>Pure Good Yogurts</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right"></i>Ice-cream for kids</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Ice-cream for kids</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -233,7 +239,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                             <span>24/12/2084</span>
                                         </div>
                                     </div>
-                                    <div class="recent-post">
+                                    <!-- <div class="recent-post">
                                         <div class="recent-post-thumb">
                                             <img src="images/recent-post2.jpg" alt="">
                                         </div>
@@ -241,7 +247,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                             <h6><a href="#">Simple and effective meals</a></h6>
                                             <span>18/12/2084</span>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -251,49 +257,24 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                     <ul>
                                         <li><i class="fa fa-phone"></i>010-020-0340</li>
                                         <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
-                                        <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">contact@romulusnara.zz.vc</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="bottom-footer">
-                        <p>Copyright © 2084 <a href="#">Your Company Name</a> <!-- Credit: www.templatemo.com --></p>
+                        <p>Copyright © 2084 <a href="#">Romulus Nara</a> <!-- Credit: www.templatemo.com --></p>
                     </div>
                     
                 </div>
             </footer>
 
+    
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script src="js/vendor/jquery.gmap3.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false">
-        </script>
-                
-        <script>
-		
-		var map;
-		
-        function initialize()
-        {
-			var map_options = {
-			  center: new google.maps.LatLng(16.8496189,96.1288854),
-			  zoom: 15,
-			  mapTypeId:google.maps.MapTypeId.ROADMAP
-			  };
-			var map = new google.maps.Map(document.getElementById("googleMap"), map_options);
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-		google.maps.event.addDomListener(window, "resize", function() 
-		{
-		 	var center = map.getCenter();
-		 	google.maps.event.trigger(map, "resize");
-		 	map.setCenter(center); 
-		});
-        </script>
 
     </body>
 </html>
